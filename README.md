@@ -110,10 +110,10 @@ TelegramLogin.startLogin(this@YourActivity)
 When the user finishes the flow, Telegram launches your configured Activity via an Intent. Override `onNewIntent` (or `onCreate` depending on your launch mode) to catch the URI. As a best practice, verify the host before passing the data to the SDK to ensure you aren't processing unrelated intents.
 
 ```kotlin
-override fun onNewIntent(intent: Intent?) {
+override fun onNewIntent(intent: Intent) {
     super.onNewIntent(intent)
     
-    intent?.data?.let { uri ->
+    intent.data?.let { uri ->
         // Simple check to ensure we only pass Telegram login URLs to the SDK
         if (uri.host == "app123456-login.tg.dev") {
             TelegramLogin.handleLoginResponse(uri, onSuccess = { loginData ->
