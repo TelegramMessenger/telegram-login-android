@@ -1,0 +1,3 @@
+-keep class org.telegram.login.TelegramLogin { public *; }
+-keep class org.telegram.login.LoginData { *; }
+-keep class org.telegram.login.LoginError { *; }
