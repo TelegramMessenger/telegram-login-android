@@ -1,6 +1,6 @@
 Telegram offers iOS and Android developers a **native integration SDK** that allows over 1 billion users to seamlessly **sign up and log in** with their Telegram accounts. This native flow leverages the Telegram app installed on the user's device, providing a frictionless, passwordless experience.
 
-> For a general overview of Telegram Login and the web library documentation, please visit [Log In With Telegram](https://core.telegram.org/bots/login).
+> For a general overview of Telegram Login and the web library documentation, please visit [Log In With Telegram](https://core.telegram.org/bots/telegram-login).
 
 ---
 
